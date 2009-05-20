@@ -1,0 +1,40 @@
+INTRODUCTION
+
+NuSMTP is a simple wrapper around Ian Baird's SKPSMTPMessage
+set of classes.  You can find the original code at:
+  http://code.google.com/p/skpsmtpmessage/
+
+SKPSMTPMessage was originally written for the iPhone. I added 
+some ifdef's so that it can also be compiled for OS X.
+
+The NuSMTPMessage class adds some utility methods to simplify
+the creation of a new SMTP message.  It also has two convenience
+methods that simplify adding body text and attachments to 
+messages.
+
+
+USAGE
+
+See the included sample application in the examples directory.
+
+NuSMTPMessage sends SMTP messages asynchronously, so you need
+to use it in the context of an application event loop (i.e. it
+won't work directly from nush).
+
+
+INSTALLATION
+
+First build the NuSMTP framework by running "nuke" at the root
+directory.  Then run "nuke install" to install the framework
+into /Library/Frameworks.
+
+To build the sample application, change to the example 
+directory and run "nuke".
+
+
+AUTHORS
+
+The SKPSMTPMessage set of classes was written by Ian Baird.
+
+The NuSMTPMessage class and example application was written
+by Jeff Buck.
