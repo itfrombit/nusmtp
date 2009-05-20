@@ -1,0 +1,13 @@
+;; Nukefile for SMTPTestApp
+
+;; source files
+(set @nu_files 	  (filelist "^nu/.*nu$"))
+(set @resources   (filelist "^resources/rule30.jpg$"))
+
+;; application description
+(set @application 	       	   "SMTPTestApp")
+(set @application_identifier   "nu.programming.SMTPTestApp")
+
+;; tasks
+(application-tasks)
+(task "default" => "application")
